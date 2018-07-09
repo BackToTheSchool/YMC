@@ -37,14 +37,14 @@ class Human :
         while self.before is not None :
             self = self.before
         while self.next is not None :
-            print(self.first_name +"\t"+ self.last_name +"\t"+ self.position +"\t" + self.date)
+            print(self.first_name + self.last_name + self.position  + self.date)
             self = self.next
-        print(self.first_name + "\t" + self.last_name + "\t" + self.position + "\t" + self.date)
-john = Human("John,Johnson,Manger,2016-12-31")
-john.sort("Tou,Xiong,Software Engineer,2016-10-15")
-john.sort("Michaela,Michaelson,District Manager,2015-12-19")
-john.sort("Jake,Jacobson,Programmer, ")
-john.sort("Jacquelyn,Jackson,DBA, ")
-john.sort("Sally,Weber,Web Developer,2015-12-18")
+        print(self.first_name  + self.last_name  + self.position  + self.date)
+john = Human("John      ,Johnson    ,Manger            ,2016-12-31")
+john.sort("Tou       ,Xiong      ,Software Engineer ,2016-10-15")
+john.sort("Michaela  ,Michaelson ,District Manager  ,2015-12-19")
+john.sort("Jake      ,Jacobson   ,Programmer        , ")
+john.sort("Jacquelyn ,Jackson    ,DBA               , ")
+john.sort("Sally     ,Weber      ,Web Developer     ,2015-12-18")
 john.show()
 
